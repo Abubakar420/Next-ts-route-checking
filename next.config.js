@@ -35,6 +35,11 @@ const nextConfig = {
         '[name]',
         `[name]-${buildId}`,
       );
+  output: "export",
+  reactStrictMode: true,
+};
+
+module.exports = nextConfig;
     }
 
     return config;
