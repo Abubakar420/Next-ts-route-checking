@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/Next-ts-route-checking",
+  output: "export",
   reactStrictMode: true,
   trailingSlash: true,
   pageExtensions: ['page.ts', 'page.tsx'],
@@ -35,8 +37,7 @@ const nextConfig = {
         '[name]',
         `[name]-${buildId}`,
       );
-  output: "export",
-  reactStrictMode: true,
+  
 };
 
 module.exports = nextConfig;
